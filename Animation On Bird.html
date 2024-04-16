@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Animation</title>
+    <style>
+        .Bird{
+            width: 145px;
+            height: 150px;
+            margin: 250px auto;
+            background-image: url("img/twitter.png");
+            animation-name: flying;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            
+        }
+        @keyframes flying{
+            0%{
+                background-position: 0px 0px;
+            }
+            25%{
+                background-position: 150px 0px;
+            }
+            75%{
+                background-position: 300px 0px;
+            }
+            100%{
+                background-position: 450px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Bird"></div>
+</body>
+</html>
